@@ -1,0 +1,99 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <script type="text/javascript" src="jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="simcir.js"></script>
+    <link rel="stylesheet" type="text/css" href="simcir.css" />
+    <script type="text/javascript" src="simcir-basicset.js"></script>
+    <link rel="stylesheet" type="text/css" href="simcir-basicset.css" />
+    <script type="text/javascript" src="simcir-library.js"></script>
+    <title></title>
+  </head>
+  <body>
+    <div class="simcir">
+{
+  "width":800,
+  "height":600,
+  "showToolbox":true,
+  "toolbox":[
+    {"type":"In"},
+    {"type":"Out"},
+    {"type":"DC"},
+    {"type":"LED"},
+    {"type":"PushOff"},
+    {"type":"PushOn"},
+    {"type":"Toggle"},
+    {"type":"BUF"},
+    {"type":"NOT"},
+    {"type":"AND"},
+    {"type":"NAND"},
+    {"type":"OR"},
+    {"type":"NOR"},
+    {"type":"EOR"},
+    {"type":"ENOR"},
+    {"type":"OSC"},
+    {"type":"7seg"},
+    {"type":"16seg"},
+    {"type":"4bit7seg"},
+    {"type":"RotaryEncoder"},
+    {"type":"BusIn"},
+    {"type":"BusOut"},
+    {"type":"RS-FF"},
+    {"type":"JK-FF"},
+    {"type":"T-FF"},
+    {"type":"D-FF"},
+    {"type":"8bitCounter"},
+    {"type":"HalfAdder"},
+    {"type":"FullAdder"},
+    {"type":"4bitAdder"},
+    {"type":"2to4BinaryDecoder"},
+    {"type":"3to8BinaryDecoder"},
+    {"type":"4to16BinaryDecoder"}
+  ],
+  "devices":[
+    {"type":"AND","id":"dev0","x":184,"y":256,"label":"AND"},
+    {"type":"ENOR","id":"dev1","x":184,"y":344,"label":"ENOR"},
+    {"type":"Toggle","id":"dev2","x":96,"y":256,"label":"Toggle"},
+    {"type":"DC","id":"dev3","x":16,"y":320,"label":"DC"},
+    {"type":"Toggle","id":"dev4","x":104,"y":344,"label":"Toggle"},
+    {"type":"4bit7seg","id":"dev5","x":344,"y":272,"label":"4bit7seg"},
+    {"type":"LED","id":"dev6","x":360,"y":208,"label":"LED"},
+    {"type":"LED","id":"dev7","x":360,"y":368,"label":"LED"},
+    {"type":"DC","id":"dev8","x":24,"y":496,"label":"DC"},
+    {"type":"LED","id":"dev9","x":424,"y":488,"label":"LED"},
+    {"type":"AND","id":"dev10","x":240,"y":488,"label":"AND"},
+    {"type":"NOT","id":"dev11","x":328,"y":488,"label":"NOT"},
+    {"type":"NOT","id":"dev12","x":184,"y":544,"label":"NOT"},
+    {"type":"Toggle","id":"dev13","x":104,"y":544,"label":"Toggle"},
+    {"type":"Toggle","id":"dev14","x":144,"y":472,"label":"Toggle"},
+    {"type":"DC","id":"dev15","x":32,"y":112,"label":"DC"},
+    {"type":"Toggle","id":"dev16","x":136,"y":112,"label":"Toggle"},
+    {"type":"LED","id":"dev17","x":320,"y":112,"label":"LED"},
+    {"type":"NOT","id":"dev18","x":224,"y":112,"label":"NOT"}
+  ],
+  "connectors":[
+    {"from":"dev0.in0","to":"dev2.out0"},
+    {"from":"dev0.in1","to":"dev4.out0"},
+    {"from":"dev1.in0","to":"dev2.out0"},
+    {"from":"dev1.in1","to":"dev4.out0"},
+    {"from":"dev2.in0","to":"dev3.out0"},
+    {"from":"dev4.in0","to":"dev3.out0"},
+    {"from":"dev5.in0","to":"dev1.out0"},
+    {"from":"dev5.in1","to":"dev0.out0"},
+    {"from":"dev6.in0","to":"dev0.out0"},
+    {"from":"dev7.in0","to":"dev1.out0"},
+    {"from":"dev9.in0","to":"dev11.out0"},
+    {"from":"dev10.in0","to":"dev14.out0"},
+    {"from":"dev10.in1","to":"dev12.out0"},
+    {"from":"dev11.in0","to":"dev10.out0"},
+    {"from":"dev12.in0","to":"dev13.out0"},
+    {"from":"dev13.in0","to":"dev8.out0"},
+    {"from":"dev14.in0","to":"dev8.out0"},
+    {"from":"dev16.in0","to":"dev15.out0"},
+    {"from":"dev17.in0","to":"dev18.out0"},
+    {"from":"dev18.in0","to":"dev16.out0"}
+  ]
+}
+</div>
+  </body>
+</html>
